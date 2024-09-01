@@ -4,6 +4,7 @@ import './App.css';
 import Status from './Status';
 import Buttons from './Buttons';
 import Render from './Render';
+import All from './All';
 
 function App() {
 

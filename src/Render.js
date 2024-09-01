@@ -1,10 +1,12 @@
 import * as Tabs from "@radix-ui/react-tabs";
 import MCQ from "./MCQ";
 import Coding from "./Coding";
+import All from "./All"; // Ensure All component is imported
 
 const tabItems = [
   "MCQ",
   "Coding",
+  "All",
 ];
 
 export default () => (
@@ -32,6 +34,7 @@ export default () => (
       <Tabs.Content key={idx} className="py-6" value={item}>
         {item === "MCQ" && <MCQ />}
         {item === "Coding" && <Coding />}
+        {item === "All" && <All />}
       </Tabs.Content>
     ))}
   </Tabs.Root>
